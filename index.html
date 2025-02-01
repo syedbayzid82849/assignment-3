@@ -43,6 +43,34 @@
 
         /* style  */
 
+        h1 span {
+            position: relative;
+            top: 40px;
+            color: white;
+            display: inline-block;
+            font-size: 1.5rem; /* Adjusted for navbar */
+            text-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #b7b7b7, 0 3px 0 #b7b7b7, 0 4px 0 #b7b7b7, 0 5px 0 #b7b7b7, 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0.5);
+            animation: bounce 0.8s ease infinite alternate;
+          }
+
+        h1 span:nth-child(2) { animation-delay: 0.1s; }
+        h1 span:nth-child(3) { animation-delay: 0.2s; }
+        h1 span:nth-child(4) { animation-delay: 0.3s; }
+        h1 span:nth-child(5) { animation-delay: 0.4s; }
+        h1 span:nth-child(6) { animation-delay: 0.5s; }
+        h1 span:nth-child(7) { animation-delay: 0.6s; }
+        h1 span:nth-child(8) { animation-delay: 0.7s; }
+        h1 span:nth-child(9) { animation-delay: 0.8s; }
+        h1 span:nth-child(10) { animation-delay: 0.9s; }
+        h1 span:nth-child(11) { animation-delay: 1s; }
+
+          @keyframes bounce {
+            100% {
+              top: -10px;
+              text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc,  0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 60px 30px rgba(0, 0, 0.3);
+            }
+          }
+
 
 
     </style>
@@ -62,8 +90,9 @@
                 <div class="logo">
                   <a href="#"><img src="./c1-assets/logo-header.png" alt=""></a>
                 </div>
-                <h1 class="text-xl font-semibold hidden lg:block">
-                    Browse<span class="text-yellow-400">4</span>Pets
+                <h1 class="text-xl font-semibold hidden lg:block mb-8">
+                  <span>B</span><span>r</span><span>o</span><span>w</span><span>s</span><span>e</span><span><span class="text-yellow-400">4</span></span><span>P</span><span>e</span><span>t</span><span>s</span>
+
                 </h1>
             </div>
 
@@ -100,7 +129,7 @@
 
           <div class="relative  text-left text-black">
             <h1 class="mb-5 text-5xl font-normal adlam-font">
-              Pamper Your Pet,<br> Because They Deserve <br> the Best
+              Pamper Your Pet,<br> Because They Deserve <br> the Bes
             </h1>
             <p class="mb-5 text-xl">
               Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
@@ -205,7 +234,7 @@
       <!-- Trending Pet Products Section -->
 
 
-      <section class="py-40 px-6 lg:px-20 bg-[#FFF9F4]">
+      <section class="py-24 px-6 lg:px-20 bg-[#FFF9F4]">
         <h2 class="text -2xl font-bold mb-12 adlam-font font-normal text-2xl md:text-4xl ">Trending Pet Products</h2>
 
         <div class=" grid grid-cols-1 lg:flex lg:space-x-4">
@@ -368,7 +397,7 @@
               </div>
             </div>
 
-            <div class=" bg-base-100 border rounded-xl">
+            <div class=" hidden lg:block bg-base-100 border rounded-xl">
               <div class="flex">
 
                 <div class="bg-[#FFF9F4] rounded-lg flex  m-2 p-3  ">
@@ -415,25 +444,68 @@
 
       <!-- Everyday low Price  -->
 
-      <section class="bg-gray-100 p-6">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-2xl font-bold mb-4">Everyday Low Price</h1>
-            <div class="flex gap-4">
-                <div class="bg-gradient-to-r from-purple-200 to-purple-300 p-6 rounded-lg w-1/2">
-                    <img src="./c1-assets/cute-dog-mid.png" alt="Pet Grooming Mitt" class="w-full h-48 object-cover mb-4 rounded-md">
-                    <h2 class="text-sm text-gray-500">Under Price</h2>
-                    <h3 class="text-xl font-bold">Pet Grooming Mitt</h3>
-                    <p class="text-sm text-gray-400">(Easy Hair Removal)</p>
-                    <p class="text-2xl font-bold mt-2">$7.99</p>
+      <section class=" pt-20 mb-96 px-6 lg:px-20">
+        <div class=" ">
+            <h1 class="text -2xl font-bold mb-16 adlam-font font-normal text-2xl md:text-4xl">Everyday Low Price</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 space-y-6 justify-center items-center lg:space-x-3">
+               
+              <div class="card-1 lg:w-[650px]">
+                <div class="relative flex items-end bg-gradient-to-r from-[rgba(179,153,255,0.4)] to-[rgba(255,153,204,0.4)] rounded-xl  		overflow-hidden py-72 lg:py-52 px-9 ">
+                  <div class="absolute top-5 left-0 p-6">
+                    <h4 class="text-[#000000] font-normal text-xl hidden lg:block">Under Price</h4>
+                    <h3 class="adlam-font text-[#000000] font-normal lg:text-3xl text-2xl py-6 lg:py-0 ">Pet Grooming Mitt</h3>
+                    <h4 class="adlam-font text-[#FFFFFF] font-normal text-2xl hidden lg:block">(Easy Hair Removal)</h4>
+                    <h1 class="adlam-font text-[#000000] font-normal text-6xl">$7.99</h1>
+                  </div>
+                  
+                  <!-- Positioned Image -->
+                  <img src="./c1-assets/cute-dog-mid.png" alt="Cute Dog" 
+                       class="absolute bottom-0 right-0 w-[300px] h-auto">
                 </div>
-                <div class="bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] rounded-xl p-6 flex items-center">
-                    <img src="./c1-assets/cute-pet-mid.png" alt="T-Shirt for Dogs" class="w-full h-48 object-cover mb-4 rounded-md">
-                    <h3 class="text-xl font-bold">T-Shirt for Dogs</h3>
-                    <p class="text-2xl font-bold text-yellow-600 mt-2">$7.99</p>
+              </div>
+
+
+              <div class="card-2 relative bottom-3 lg:left-32 lg:w-3/4 ">
+                <div class="relative flex rounded-xl items-end bg-gradient-to-r from-[rgba(255,255,153,0.6)] to-[rgba(255,204,102,0.6)] rounded-xl overflow-hidden py-72 lg:py-52 px-9 ">
+                  <div class="absolute lg:top-0 top-5 left-0 p-6">
+                    <h4 class="text-[#000000] font-normal text-xl hidden lg:block">Under Price</h4>
+                    <h3 class="adlam-font text-[#000000] font-normal lg:text-3xl text-2xl py-6 lg:py-0 ">Pet Grooming Mitt</h3>
+                    <h4 class="adlam-font text-[#FFFFFF] font-normal text-2xl hidden lg:block">(Easy Hair Removal)</h4>
+                    <h1 class="adlam-font text-[#000000] font-normal text-6xl">$7.99</h1>
+                  </div>
+                  
+                  <!-- Positioned Image -->
+                  <img src="./c1-assets/cute-pet-small.png" alt="Cute Dog" 
+                       class="absolute bottom-0 right-0 w-[300px] h-auto">
                 </div>
+              </div>
+
+            
             </div>
         </div>
       </section>
+
+
+      <!-- Get Pawsome News!  -->
+      
+      <section class="w-10/12 mx-auto bg-[#FFF9F4] flex justify-center items-center mb-2 ">
+        <div>
+          <img src="./c1-assets/cute-pet-mid.png" alt="">
+        </div>
+        <div class="">
+          <h1 class="adlam-font text-4xl mb-5">Get Pawsome News!</h1>
+          <p class="mb-5">Exclusive training tips, ticks, product deals and more.</p>
+          <div class="">
+            <input type="email" placeholder="Type Your E-mail" class="input mb-5 w-full max-w-xs" />
+            <button class="bg-yellow-400 text-white px-4 py-2 font-medium rounded-md hover:bg-yellow-500">
+              Subscribe
+            </button>
+          </div>
+    
+        </div>
+      </section>
+
+
 
       
 
